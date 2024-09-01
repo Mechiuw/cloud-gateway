@@ -15,7 +15,7 @@ public class Routes {
     public RouterFunction<ServerResponse> productServiceRoute(){
         //functional endpoint programming model
         return GatewayRouterFunctions.route("product_service")
-                .route(RequestPredicates.path("/api/product"), HandlerFunctions.http("http://localhost:8080"))
+                .route(RequestPredicates.path("/api/product"), HandlerFunctions.http("http://localhost:9000"))
                 .build();
     }
 }
