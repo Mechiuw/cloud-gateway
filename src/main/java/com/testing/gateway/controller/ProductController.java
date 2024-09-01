@@ -8,7 +8,9 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping("/api/product")
-public class product {
+public class ProductController {
+
+    @RequestMapping
     public ProductResponse testReport(){
         try{
             return new ProductResponse(
